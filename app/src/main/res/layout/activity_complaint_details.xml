@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/child_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/heading_marjin_bottom"
+                android:layout_marginTop="@dimen/heading_marjin_top"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/heading_image_width"
+                    android:layout_height="@dimen/heading_image_height"
+                    android:layout_gravity="center"
+                    android:src="@drawable/issue_image" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Where does it come from ?"
+                    android:textColor="#404996"
+                    android:textSize="@dimen/heading_text_size"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/complain_deatils_margin_left"
+                android:layout_marginRight="@dimen/complain_deatils_margin_right"
+                android:text="A paragraph is a self-contained unit of a discourse in writing dealing with a particular point or idea. Though not required by the syntax of any language, paragraphs are usually an expected part of formal writing, used to organize longer prose."
+                android:textColor="#858686"
+                android:textSize="@dimen/complain_deatils_text_size"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/locattion_margin_left"
+                android:layout_marginRight="@dimen/locattion_margin_right"
+                android:layout_marginTop="@dimen/locattion_margin_top"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="@dimen/phone_image_width"
+                    android:layout_height="@dimen/phone_image_height"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/phone_image_margin_right"
+                    android:padding="@dimen/padding"
+                    android:src="@drawable/customer_name" />
+
+                <TextView
+                    android:id="@+id/customer_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="jmes Rai disoja"
+                    android:textColor="#858686"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/locattion_margin_left"
+                android:layout_marginRight="@dimen/locattion_margin_right"
+                android:layout_marginTop="@dimen/locattion_margin_top"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="@dimen/phone_image_width"
+                    android:layout_height="@dimen/phone_image_height"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/phone_image_margin_right"
+                    android:padding="@dimen/padding"
+                    android:src="@drawable/location" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Idco Tower , Mancheswar Instratila Istate Tower PIN : 752002"
+                    android:textColor="#858686"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/locattion_margin_left"
+                android:layout_marginRight="@dimen/locattion_margin_right"
+                android:layout_marginTop="@dimen/locattion_margin_top"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="@dimen/phone_image_width"
+                    android:layout_height="@dimen/phone_image_height"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/phone_image_margin_right"
+                    android:padding="@dimen/padding"
+                    android:src="@drawable/mobile" />
+
+                <TextView
+                    android:id="@+id/mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="+91 7205181047"
+                    android:textColor="#858686"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/locattion_margin_left"
+                android:layout_marginRight="@dimen/locattion_margin_right"
+                android:layout_marginTop="@dimen/locattion_margin_top"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="@dimen/phone_image_width"
+                    android:layout_height="@dimen/phone_image_height"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/phone_image_margin_right"
+                    android:padding="@dimen/padding"
+                    android:src="@drawable/product_name" />
+
+                <TextView
+                    android:id="@+id/product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Fridge"
+                    android:textColor="#858686"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/locattion_margin_left"
+                android:layout_marginRight="@dimen/locattion_margin_right"
+                android:layout_marginTop="@dimen/locattion_margin_top"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="@dimen/phone_image_width"
+                    android:layout_height="@dimen/phone_image_height"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/phone_image_margin_right"
+                    android:padding="@dimen/padding"
+                    android:src="@drawable/service_type" />
+
+                <TextView
+                    android:id="@+id/service_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Free"
+                    android:textColor="#858686"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/locattion_margin_left"
+                android:layout_marginRight="@dimen/locattion_margin_right"
+                android:layout_marginTop="@dimen/locattion_margin_top"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="@dimen/phone_image_width"
+                    android:layout_height="@dimen/phone_image_height"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="@dimen/phone_image_margin_right"
+                    android:padding="@dimen/padding"
+                    android:src="@drawable/rupees" />
+
+                <TextView
+                    android:id="@+id/amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="100"
+                    android:textColor="#858686"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/locattion_margin_top"
+                android:layout_marginLeft="@dimen/locattion_margin_left"
+                android:layout_marginRight="@dimen/locattion_margin_right"
+                android:layout_marginTop="@dimen/agent_feedback_view_margin_top"
+                android:orientation="vertical">
+                <EditText
+                    android:visibility="visible"
+                    android:id="@+id/collected_amt"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:digits="0987654321"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="* Received Amount"
+                    android:layout_marginBottom="10dp"
+                    android:paddingLeft="10dp" />
+
+
+                <EditText
+                    android:id="@+id/feed_back"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/agent_feedback_view_height"
+                    android:background="@drawable/edit_text_background"
+                    android:hint="Agent Feedback .."
+                    android:paddingLeft="10dp" />
+
+                <Button
+                    android:id="@+id/fix"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/agent_feedback_button_height"
+                    android:layout_marginTop="@dimen/agent_feedback_view_margin_top"
+                    android:background="@drawable/button_radious"
+                    android:text="Resolved"
+                    android:textAllCaps="false"
+                    android:textColor="#ffffff"
+                    android:textSize="@dimen/complain_deatils_text_size"
+                    android:textStyle="normal" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/listview"
+        android:scrollbars="none"
+        android:visibility="visible"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/no_data"
+        android:textStyle="bold"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:text="No Details Found....."
+        android:layout_height="match_parent" />
+
+
+
+
+</LinearLayout>
+
+

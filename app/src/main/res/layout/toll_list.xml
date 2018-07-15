@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="60dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="8dp"
+    android:paddingTop="10dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="3"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/toll_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text="Toll Name"
+            android:layout_gravity="left"
+            android:gravity="left"
+            android:textColor="#6a6a6a"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/toll_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:layout_gravity="left"
+            android:text="Address"
+            android:gravity="left"
+            android:textColor="#6a6a6a"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/toll_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="right"
+        android:layout_weight="1"
+        android:paddingLeft="3dp"
+        android:textStyle="bold"
+        android:paddingRight="10dp"
+        android:text="Product"
+        android:textColor="#6a6a6a"
+        android:textSize="16dp" />
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<color name="colorPrimary">#1d224a</color>
+<color name="colorPrimaryDark">#1d224a</color>
+<color name="colorAccent">#1d224a</color>
+<color name="button_text_color">#ffffff</color>
+<color name="edit_text_background_color">#ffffff</color>
+<color name="text_color">#ffffff</color>
+<color name="text_hint_color">#90ffffff</color>
+<color name="transparent">#00000000</color>
+<color name="progress_handler_color">#1d224a</color>
+
+<color name="textColorPrimary">#FFFFFF</color>
+<color name="windowBackground">#FFFFFF</color>
+<color name="navigationBarColor">#000000</color>
+
+<color name="navigation_drawer_background">#1d224a</color>
+<color name="navigation_drawer_profile_image_id">#9ea6ee</color>
+<color name="navigation_drawer_profile_image_name">#ffffff</color>
+<color name="navigation_drawer_menu_text_color">#9ea6ee</color>
+<color name="navigation_drawer_menu_separator_color">#0e122e</color>
+
+
+<color name="indeterminate_progress_color">#FFFFFF</color>
+<color name="indeterminate_progress_buffer">#00ff00</color>
+
+
+
+</resources>

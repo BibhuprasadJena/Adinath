@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9937178B">
+
+
+        <LinearLayout
+            android:id="@+id/child_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/main_layout_padding">
+
+            <ImageView
+                android:layout_width="@dimen/logo_width"
+                android:layout_height="@dimen/logo_height"
+                android:id="@+id/logo"
+                android:layout_marginBottom="@dimen/logo_margin_bottom"
+                android:src="@drawable/logo" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/edit_text_background_color"
+                    android:drawableLeft="@drawable/username_drawable_left"
+                    android:hint="Username"
+                    android:paddingLeft="@dimen/email_padding_left"
+                    android:text="eztoll"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="@dimen/email_password_text_size" />
+
+
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/password_margin_top"
+                    android:backgroundTint="@color/edit_text_background_color"
+                    android:drawableLeft="@drawable/password_drawable_left"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/password_padding_left"
+                    android:text="111111"
+                    android:textColor="@color/text_color"
+                    android:textColorHint="@color/text_hint_color"
+                    android:textSize="@dimen/email_password_text_size" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/alreadyLoginLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/login_button_layout_margin_top"
+                android:orientation="vertical">
+
+
+                <CheckBox
+                    android:id="@+id/remember_me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/remember_me_chk_box_height"
+                    android:layout_marginBottom="@dimen/chkbox_margin_bottom"
+                    android:layout_marginTop="@dimen/chkbox_margin_top"
+                    android:text="Remember Me"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/rememberme_text_size"
+                    android:visibility="gone" />
+
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/toolbar_logo_height"
+                    android:layout_marginTop="@dimen/login_button__margin_top"
+                    android:background="@drawable/button_radious"
+                    android:text="Login"
+                    android:textAllCaps="false"
+                    android:textColor="@color/button_text_color"
+                    android:textSize="@dimen/login_button_text_size" />
+
+                <TextView
+                    android:id="@+id/forgot_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin"
+                    android:text="Forgot Password ?"
+                    android:visibility="gone"
+                    android:textColor="@color/button_text_color"
+                    android:textSize="@dimen/forgot_password_text_size" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+</LinearLayout>
+
+

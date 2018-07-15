@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:gravity="center"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/tick" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="THANK YOU" />
+
+    <TextView
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:text="Your Complain Has Been Registered Successfully" />
+
+    <TextView
+    android:id="@+id/msg"
+    android:gravity="center"
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Your Compilain Id : UR5508"
+    android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/ok"
+        android:gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="Ok"
+        android:background="@drawable/edit_text_background"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold" />
+
+</LinearLayout>

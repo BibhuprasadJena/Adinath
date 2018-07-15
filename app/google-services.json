@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "807016239367",
+    "firebase_url": "https://agent-management.firebaseio.com",
+    "project_id": "agent-management",
+    "storage_bucket": "agent-management.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807016239367:android:b731f2d2edcca5bc",
+        "android_client_info": {
+          "package_name": "com.release.eztoll"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807016239367-ke7nho2n5v667rlg67k3eb0jucb35er7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlQgP5Y_ZTDt3jBx1Q7durVW_fxw2h1x8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
