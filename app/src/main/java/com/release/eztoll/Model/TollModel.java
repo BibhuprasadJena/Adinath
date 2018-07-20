@@ -14,6 +14,28 @@ public class TollModel implements Serializable {
     String latitide = "";
     String longitude = "";
 
+    public String getVno() {
+        return vno;
+    }
+
+    public void setVno(String vno) {
+        this.vno = vno;
+    }
+
+    String vno = "";
+
+
+
+    public String getVowner() {
+        return vowner;
+    }
+
+    public void setVowner(String vowner) {
+        this.vowner = vowner;
+    }
+
+    String vowner = "";
+
     public String getTollname() {
         return tollname;
     }

@@ -18,7 +18,8 @@
             <EditText
                 android:id="@+id/source"
                 android:layout_width="match_parent"
-                android:layout_height="45dp"
+                android:layout_height="wrap_content"
+                android:minHeight="45dp"
                 android:background="@drawable/edit_text_background"
                 android:hint="Source"
                 android:paddingLeft="10dp" />
@@ -46,7 +47,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="45dp"
                     android:background="@drawable/edit_text_background"
-                    android:hint="Destination"
+                    android:hint="To"
                     android:inputType="text"
                     android:imeOptions="actionSearch"
                     android:paddingLeft="10dp" />
@@ -82,7 +83,7 @@
                     android:layout_marginRight="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/button_radious"
-                    android:text="View Trolls On MAP"
+                    android:text="View Tolls On MAP"
                     android:textAllCaps="false"
                     android:textColor="#ffffff" />
 
@@ -93,7 +94,7 @@
                     android:layout_marginLeft="5dp"
                     android:layout_weight="1"
                     android:background="@drawable/button_radious"
-                    android:text="View Listed Trolls"
+                    android:text="View Listed Tolls"
                     android:textAllCaps="false"
                     android:textColor="#ffffff" />
 
@@ -127,6 +128,7 @@
             android:id="@+id/mapView"
             android:name="com.google.android.gms.maps.SupportMapFragment"
             android:layout_width="match_parent"
+            map:uiCompass="true"
             android:layout_height="match_parent"
             android:visibility="visible" />
     </LinearLayout>

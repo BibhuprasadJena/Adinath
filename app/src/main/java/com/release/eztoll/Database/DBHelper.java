@@ -44,5 +44,6 @@ public class DBHelper extends SQLiteOpenHelper {
     /**
      * This query is responsible to create transaction table .
      */
-    private static final String USER_TRANSACTION = "CREATE TABLE IF NOT EXISTS " + TRANSACTION_TABLE + "(Id TEXT,Amount TEXT,TranStatus TEXT,Date TEXT)";
+    private static final String USER_TRANSACTION = "CREATE TABLE IF NOT EXISTS " + TRANSACTION_TABLE +
+            "(Id TEXT,Amount TEXT,TranStatus TEXT,Date TEXT,TollName TEXT,Vno TEXT,Vowner TEXT)";
 }

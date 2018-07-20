@@ -19,4 +19,8 @@ public class Constants {
     public static final int CUSTOMER_ENQUERY_REQUEST = 11;
     public static final int PRODUCT_USER_DETAILS_FOR_COMPLAIN_REQUEST = 12;
     public static final int REGISTER_COMPLAIN_REQUEST = 13;
+
+
+    public static final int TOLL_REQUEST = 14;
+
 }

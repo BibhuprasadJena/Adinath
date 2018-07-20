@@ -185,9 +185,6 @@ public class Wallet extends Fragment implements ConnectivityInterface.ApiInteraf
 
                     Date date = Calendar.getInstance().getTime();
 
-
-
-
                     // Display a date in day, month, year format
                     DateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
                     formatter = new SimpleDateFormat("dd MMM yyyy");
@@ -195,8 +192,8 @@ public class Wallet extends Fragment implements ConnectivityInterface.ApiInteraf
 
                     SQLiteDatabase DB = getActivity().openOrCreateDatabase(DBHelper.DATABASE_NAME, MODE_PRIVATE, null);
 
-                        String Qry = "INSERT INTO " + DBHelper.TRANSACTION_TABLE + "(Id,Amount,TranStatus,Date) VALUES" +
-                                "('" + 1 + "','" + adding_amount + "','" + 1 + "','"+ today + "')";
+                        String Qry = "INSERT INTO " + DBHelper.TRANSACTION_TABLE + "(Id,Amount,TranStatus,Date,TollName,Vno,Vowner) VALUES" +
+                                "('" + 1 + "','" + adding_amount + "','" + 1 + "','"+ today + "','','','')";
 
                         DB.execSQL(Qry);
 

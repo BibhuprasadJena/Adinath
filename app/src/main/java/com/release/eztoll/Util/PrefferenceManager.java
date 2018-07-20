@@ -31,6 +31,10 @@ public class PrefferenceManager {
     public static final String DEFAULT_WALLET_AMOUNT = "0";
 
 
+    public static final String CONFIG = "config";
+    public static final String DEFAULT_CONFIG = "1";
+
+
     public PrefferenceManager(Context context) {
         sharedPreferences = context.getSharedPreferences(PrefName,Context.MODE_PRIVATE);
         editor = sharedPreferences.edit();

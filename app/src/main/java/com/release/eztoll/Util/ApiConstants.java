@@ -49,6 +49,13 @@ public class ApiConstants {
 
     public static final String REGISTER_COMPLAIN = "customerComplinsave";
     public static final String REGISTER_COMPLAIN_BASE_URL =  BASE_URL+"complain/";
+
+
+
+    /******************************************************************/
+
+    public static final String TOLL_DETAILS = "index.php";
+    public static final String TOLL_DETAILS__BASE_URL =  "http://eztolls.org/mobileapi/";
 }
 
 

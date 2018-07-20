@@ -12,6 +12,39 @@ public class TransactionModel implements Serializable {
     String date = "";
     String status = "";
 
+    public String getVno() {
+        return vno;
+    }
+
+    public void setVno(String vno) {
+        this.vno = vno;
+    }
+
+    String vno = "";
+    String vowner = "";
+
+
+
+
+    public String getVowner() {
+        return vowner;
+    }
+
+    public void setVowner(String vowner) {
+        this.vowner = vowner;
+    }
+
+
+    public String getToll_name() {
+        return toll_name;
+    }
+
+    public void setToll_name(String toll_name) {
+        this.toll_name = toll_name;
+    }
+
+    String toll_name = "";
+
 
     public String getPrice() {
         return price;

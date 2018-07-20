@@ -42,8 +42,9 @@
                 <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
             </intent-filter>
         </service>
-
-        <service android:name=".Util.GeofenceTrasitionService" android:allowBackup="true"></service>
+        <service
+            android:name=".Util.GeofenceTrasitionService"
+            android:allowBackup="true" />
 
         <activity
             android:name=".Activity.ForgotPassword"
@@ -62,9 +63,13 @@
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
+        <activity android:name=".Activity.ProxyActivity" />
 
-
+        <service
+            android:name=".service.MyService"
+            android:enabled="true"
+            android:exported="true"></service>
     </application>
 
 </manifest>

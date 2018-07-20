@@ -18,6 +18,8 @@ import android.view.MenuItem;
 import android.view.View;
 
 import com.release.eztoll.Database.DBHelper;
+import com.release.eztoll.Fragment.Comingsoon;
+import com.release.eztoll.Fragment.Config;
 import com.release.eztoll.Fragment.Transactions;
 import com.release.eztoll.Fragment.DashBoard;
 import com.release.eztoll.Fragment.FragmentDrawer;
@@ -126,6 +128,51 @@ public class UserDashBoard extends ActionBarActivity implements FragmentDrawer.F
                 title = getString(R.string.title_transaction);
                 break;
             case 3:
+                fragment = new Comingsoon();
+                title = getString(R.string.title_nav_item_toll_entrance);
+                break;
+            case 4:
+                fragment = new Comingsoon();
+                title = getString(R.string.title_nav_item_know_your_highway);
+                break;
+            case 5:
+                fragment = new Comingsoon();
+                title = getString(R.string.title_nav_item_nearby);
+                break;
+            case 6:
+                fragment = new Comingsoon();
+                title = getString(R.string.title_nav_item_share_friends);
+                break;
+            case 7:
+                fragment = new Comingsoon();
+                title = getString(R.string.title_nav_item_emergency_helpline);
+                break;
+            case 8:
+                fragment = new Comingsoon();
+                title = getString(R.string.title_nav_item_disclaimer);
+                break;
+
+            case 9:
+                fragment = new Comingsoon();
+                title = getString(R.string.title_nav_item_my_reciepts);
+                break;
+            case 10:
+                fragment = new Config();
+                title = getString(R.string.title_nav_item_settings);
+                break;
+            case 11:
+                fragment = new Comingsoon();
+                title = getString(R.string.title_nav_item_report_an_issue);
+                break;
+            case 12:
+                fragment = new Comingsoon();
+                title = getString(R.string.title_nav_item_rate_us);
+                break;
+            case 13:
+                fragment = new Comingsoon();
+                title = getString(R.string.title_nav_item_about_us);
+                break;
+            case 14:
                 logout();
                 break;
             default:

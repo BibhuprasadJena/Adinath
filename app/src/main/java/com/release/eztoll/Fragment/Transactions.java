@@ -54,6 +54,8 @@ public class Transactions extends Fragment {
     SQLiteDatabase DB;
     ListView listview;
     TextView no_data;
+    TextView total_tran;
+    int credit_amt,debit_amt;
     ArrayList<TransactionModel> transactionModels = new ArrayList<>();
 
     public Transactions() {
@@ -71,6 +73,7 @@ public class Transactions extends Fragment {
     private void _init(View view) {
         listview = (ListView) view.findViewById(R.id.listview);
         no_data = (TextView) view.findViewById(R.id.no_data);
+        total_tran = (TextView) view.findViewById(R.id.total_tran);
 
         prefferenceManager = PrefferenceManager.getFeaturePreference(getActivity());
         DB = getActivity().openOrCreateDatabase(DBHelper.DATABASE_NAME, MODE_PRIVATE, null);
@@ -90,7 +93,20 @@ public class Transactions extends Fragment {
                     transactionModel.setPrice(cursor.getString(1).trim());
                     transactionModel.setStatus(cursor.getString(2).trim());
                     transactionModel.setDate(cursor.getString(3).trim());
+                    transactionModel.setToll_name(cursor.getString(4).trim());
+                    transactionModel.setVno(cursor.getString(5).trim());
+                    transactionModel.setVowner(cursor.getString(6).trim());
                     transactionModels.add(transactionModel);
+
+                    try{
+
+                        if(cursor.getString(2).trim().equals("1")){
+                            credit_amt = credit_amt+(Integer.parseInt(cursor.getString(1).trim()));
+                        }else {
+                            debit_amt = debit_amt+(Integer.parseInt(cursor.getString(1).trim()));
+                        }
+
+                    }catch (Exception e){}
 
                 } while (cursor.moveToNext());
 
@@ -98,10 +114,13 @@ public class Transactions extends Fragment {
                 TransactionAdapter transactionAdapter = new TransactionAdapter(getActivity(),transactionModels);
                 listview.setAdapter(transactionAdapter);
 
+                total_tran.setText("Total Credit Amount : ₹ "+ credit_amt +"\n"+"Total Debit Amount  : ₹ "+ debit_amt);
+
             }
         }else {
             no_data.setVisibility(View.VISIBLE);
             listview.setVisibility(View.GONE);
+            total_tran.setVisibility(View.GONE);
         }
     }
 

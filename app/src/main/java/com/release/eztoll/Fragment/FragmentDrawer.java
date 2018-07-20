@@ -117,13 +117,22 @@ public class FragmentDrawer extends Fragment {
 
 
         profile_name.setText("Abhishek Ranjan");
-//        profile_id.setText("ID : A097736");
         profile_image.setImageResource(R.drawable.profile);
 
-        Nav_menu_image.add(R.drawable.dashboard);
+        Nav_menu_image.add(R.drawable.near_tollplaza);
         Nav_menu_image.add(R.drawable.wallet);
-        Nav_menu_image.add(R.drawable.transaction);
-        Nav_menu_image.add(R.drawable.logout);
+        Nav_menu_image.add(R.drawable.reciept);
+        Nav_menu_image.add(R.drawable.toll_entrance);
+        Nav_menu_image.add(R.drawable.highway);
+        Nav_menu_image.add(R.drawable.nearby);
+        Nav_menu_image.add(R.drawable.share);
+        Nav_menu_image.add(R.drawable.emergency);
+        Nav_menu_image.add(R.drawable.disclamair);
+        Nav_menu_image.add(R.drawable.reciept);
+        Nav_menu_image.add(R.drawable.settings);
+        Nav_menu_image.add(R.drawable.report);
+        Nav_menu_image.add(R.drawable.rating);
+        Nav_menu_image.add(R.drawable.about);
         Nav_menu_image.add(R.drawable.logout);
 
 
